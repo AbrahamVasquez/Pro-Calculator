@@ -1,0 +1,73 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #79cef8, #08497B);
+}
+
+h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-grill {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calc-grill > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #ffff;
+    outline: none;
+    background-color: rgba(255,  255, 255, .75);
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0,  0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calc-grill > button:hover {
+    background-color: rgb(255, 255, 255, .9);
+}
+
+footer {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 5rem;
+    height: 100px;
+    color: yellow;
+    background: rgb(10, 2, 116);
+}
+
+span {
+    font-size: 2rem;
+    text-align: right;
+}
